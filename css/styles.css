@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Staatliches&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --staat-font: "Staatliches", sans-serif;
+    --manrope-font: "Manrope", sans-serif;
+    --fondo-degradado: linear-gradient(180deg, rgb(10, 77, 77) 0%, black 100%);
+    --negro90: rgb(15, 15, 15);
+}
+
+.staatliches-regular {
+    font-family: var(--staat-font);
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.manrope {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-image: url(/img/fondopadre.jpg);
+    display: grid;
+    place-items: center;
+
+}
+
+.sombra{ box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);}
+
+.tarjeta {
+
+    height: 600px;
+    width: 300px;
+    background-color: white;
+    border-radius: 14px;
+    
+    overflow: hidden;
+    
+    & .encabezado{
+        background-image: url(/img/fondo.jpg);
+        height: 160px;
+        width: 100%;
+    }  
+    & .producto{
+        height: 320px;
+        width: 100%;
+        position: relative;
+
+        & .imagen {
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            background-image: url(../img/fotocirculo.jpg);
+            background-position: center;
+            background-size: contain;
+            border-radius: 50%;
+            margin: 0 auto;
+            background-color: red;
+            top: -90px;
+            left: 78px;
+        }
+
+        & .texto1 {
+            position: relative;
+            top: 64px;
+            left: 38px;
+        }
+
+        & .texto2 {
+            position: relative;
+            top: 65px;
+            left: 38px;
+            font-size: small;
+        }
+
+        & .texto3 {
+            position: relative;
+            top: 110px;
+            left: 38px;
+        }
+
+        /* & .texto4 {
+            position: relative;
+            top: 110px;
+            left: 38px;
+            font-size:  ;
+        } */
+
+
+ 
+    } 
+
+    & .botonera{
+        background-image: url(/img/fondo1.jpg);
+        height: 120px;
+        width: 100%;
+        background-color: rgb(25, 238, 60);
+    } 
+
+}
+
+.linea-horizontal {
+    width: 100%;
+    /* ajusta el ancho según sea necesario */
+    margin: 0px auto;
+    /* centra la línea horizontal */
+    border-style: solid;
+    border-width: 7px;
+    /* ajusta el grosor según sea necesario */
+    background-color: #6406cf;
+}
+
+
+
+
+/*BOX-SHADOW : X Y BLUR Z COLOR         SOMBRA EXTERIOR*/
+    /*BOX-SHADOW : INSET X Y BLUR Z COLOR   SOMBRA INTERIOR*/
