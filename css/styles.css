@@ -34,7 +34,7 @@ body {
 .container {
     height: 100%;
     width: 100%;
-    background-image: url(/img/fondopadre.jpg);
+    background-image: url(../img/fondopadre.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
@@ -54,7 +54,7 @@ body {
     overflow: hidden;
     
     & .encabezado{
-        background-image: url(/img/fondo.jpg);
+        background-image: url(../img/fondo.jpg);
         height: 160px;
         width: 100%;
     }  
@@ -63,7 +63,7 @@ body {
         height: 320px;
         width: 100%;
         position: relative;
-        background-image: url(/img/fondotexto.jpg);
+        background-image: url(../img/fondotexto.jpg);
 
         & .imagen {
             position: absolute;
