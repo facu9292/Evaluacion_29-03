@@ -35,6 +35,8 @@ body {
     height: 100%;
     width: 100%;
     background-image: url(/img/fondopadre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     place-items: center;
 
@@ -57,9 +59,11 @@ body {
         width: 100%;
     }  
     & .producto{
+
         height: 320px;
         width: 100%;
         position: relative;
+        background-image: url(/img/fondotexto.jpg);
 
         & .imagen {
             position: absolute;
@@ -94,22 +98,31 @@ body {
             left: 38px;
         }
 
-        /* & .texto4 {
+        & .texto4 { 
+            height: 10px;
+            width: 78%;
             position: relative;
-            top: 110px;
+            top: 175px;
             left: 38px;
-            font-size:  ;
-        } */
+            display: flex;
+            justify-content: space-between;
+
+        }
 
 
  
     } 
 
     & .botonera{
-        background-image: url(/img/fondo1.jpg);
-        height: 120px;
-        width: 100%;
-        background-color: rgb(25, 238, 60);
+
+        & .imagen2 {
+            background-image: url(../img/fondo1.jpg);
+            height: 120px;
+            width: 100%;
+            display: grid;
+            place-items: center;
+        }
+
     } 
 
 }
